@@ -1,0 +1,4 @@
+LIBRARY "AdditionalKeys"
+EXPORTS
+	expCreatePlugin
+	expGetInterfaceVersion
