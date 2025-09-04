@@ -10,7 +10,6 @@ bool AdditionalKeys::Initialize(IAshitaCore *core, ILogManager *logger, const ui
     m_PluginId = id;
     pPlugin = this;
 
-    // Add the callback using the specified constructor
     m_AshitaCore->GetInputManager()->GetKeyboard()->AddCallback("AdditionalKeys_cb",
                                                                 nullptr, // device data callback
                                                                 nullptr, // device state callback
@@ -83,3 +82,4 @@ BOOL __stdcall AdditionalKeys::KeyboardCallback(WPARAM wParam, LPARAM lParam, bo
 
     return false;
 }
+
